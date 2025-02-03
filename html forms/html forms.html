@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS AND INPUT TAGS</title>
+</head>
+<body>
+    <!-- add a heading-->
+    <h1> DORAEMON </h1>
+    <!-- use form tag-->
+    <form>
+        <br>
+        <ul>
+        <!-- LABEL TAG - Describes and links form elements -->
+        <li><label for="name" > NAME : </label>
+        <!-- input tag , input type is used to enter the type of the box (text, checkbox...)-->
+        <input type="text" placeholder= "Enter your name"> </li>
+        <!-- placeholder-->
+         <br><br><li>
+         <label for="gender"> GENDER : </label>
+         <br><br>
+        <label for="Male"> Male </label>
+        <input type="radio" name="gender" value="MALE" required>
+        <label for="Female"> Female </label>
+        <input type="radio" name="gender" value="FEMALE" required>
+        <!--DATE TAG-->
+        <label for="gender"> Other</label>
+        <input type ="radio" name ="gender" value ="OTHER">
+        
+    </li>
+        <br><br><li>
+        <label for="date"> ENTER BIRTH DATE : </label>
+        <input type="date" name="date" required>
+    </li>
+        <!--udjkw-->
+    <br><br>
+<li><label for="email"> EMAIL ADDRESS : </label>
+    <input type="email" name="email" placeholder="Enter your email address">
+    
+    <br></li> <br>
+    <li>
+        <label for="password"> PASSWORD : </label>
+        <input type="password" name="password" required>
+    </li>
+    <li><br>
+    <label for="tel"> MOBILE NUMBER : </label>
+    <input type="tel" name="tel" placeholder="Enter your mobile number">
+     </li>
+     <br>
+     <li>
+     <label for="select"> Favorite character : </label>
+     <select name="Favourite character">
+    <option value="Nobita"> Nobita </option>
+    <option value="Doraemon"> Doraemon </option>
+    <option value="Gian"> Gian </option>
+    <option value="Sunio"> Sunio </option>
+    <option value="Schizuka"> Schizuka </option>
+    <option value="Doraemi"> Doraemi </option>
+</select>
+<br><br>
+<textarea name="comments" rows ="4" cols="38">
+WHY THE SELECTED CHARACTER IS YOUR FAVORITE?
+</textarea>
+</li>
+    </form>
+    
+</body>
+</html>

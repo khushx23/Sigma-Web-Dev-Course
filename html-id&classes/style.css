@@ -1,0 +1,10 @@
+/* CSS for ID */
+#myUniqueID {
+    background-color: yellow;
+  }
+  
+  /* CSS for Class */
+  .myClass {
+    font-size: 18px;
+  }
+  
