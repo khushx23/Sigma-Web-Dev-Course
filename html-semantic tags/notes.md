@@ -3,23 +3,32 @@ Semantic tags add meaning to your HTML. They tell both the browser and the devel
 
 ## Here are some of the key semantic tags you must know about:
 
-<header>: Used to represent the top section of a web page, often containing headings, logos, and navigation.
+~~
+header <>: Used to represent the top section of a web page, often containing headings, logos, and navigation.
 
-<nav>: Signifies a navigation menu on a web page.
 
-<article>: Indicates a self-contained piece of content, such as a blog post or news article.
+nav<>: Signifies a navigation menu on a web page.
 
-<section>: Represents a thematic grouping of content on a web page.
 
-<aside>: Typically used for sidebars or content that is tangentially related to the main content.
+article<>: Indicates a self-contained piece of content, such as a blog post or news article.
 
-<footer>: Represents the footer of a web page, usually containing copyright information and contact details.
 
-<figure> and <figcaption>: Used for embedding images, diagrams, or charts, along with a caption.
+section<>: Represents a thematic grouping of content on a web page.
 
-<main>: Signifies the main content area of a web page.
 
-<time>: Used to represent time-related information, like dates and times.
+aside<>: Typically used for sidebars or content that is tangentially related to the main content.
+
+
+footer<>: Represents the footer of a web page, usually containing copyright information and contact details.
+
+
+figure<> and figcaption<>: Used for embedding images, diagrams, or charts, along with a caption.
+
+
+main: Signifies the main content area of a web page.
+
+
+time: Used to represent time-related information, like dates and times.
 
 
 Conclusion
