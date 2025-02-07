@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>CSS</title>
+    <style>
+        h1 {
+            color: red;
+        }
+
+        p,a {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CodeWithHarry</h1>
+    <p>This is the p tag</p>
+    <a href="#">This is the anchor (a) tag</a>
+</body>
+
+</html>

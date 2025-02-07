@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHILD AND DSCENDANT SELECTOR</title>
+</head>
+  
+<style>
+
+    /* element selector */
+    div{
+    background-color: red;    
+    }
+
+    /* child selector */
+
+    div > p{
+        color: yellow;
+    }
+
+    /* descendant selector */
+
+    header p{
+        background-color: palevioletred;
+    }
+    *{
+        margin: 0;
+        
+    }
+</style>
+<body>
+    <div>
+        i am a div 
+        <p> 
+            i am a hehehhehhe para
+        </p>
+    </div>
+    <header>
+        <article>
+            <p>
+                i am a para
+            </p>
+        </article>
+    </header>
+</body>
+</html>
