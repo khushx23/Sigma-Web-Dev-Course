@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+         :root{   /*a variable can be used to hold values that r repetetively used in any project. for ex: any color , number , string. */
+            --color: rgb(247, 50, 106);
+            --seccolor: rgb(255, 184, 204);
+        }
+        .var{
+            /* background-color: rgb(106, 239, 106); */
+            background-color: var(--color);
+        }
+        .container{
+            /* background: rgb(152, 248, 179); */
+            background-color: var(--seccolor);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            padding: 34px;
+        }
+
+        ul li:first-child{
+           background-color: rgba(138, 248, 4, 0.844);
+           border: 4px solid var(--seccolor);
+           opacity: 0.7
+        }
+          
+         
+    </style>
+</head>
+<body>
+    <div class="var">
+        <ul>
+            <li>Home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </div>
+    <div class="container"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, aliquid fugit sed pariatur eius impedit tempora reprehenderit illo iste, incidunt necessitatibus sequi veritatis suscipit perferendis tenetur deleniti maxime molestias possimus, vel consequuntur doloremque. Autem perspiciatis vel iusto deleniti molestias? Quia sint similique vel et ipsam!</div>
+</body>
+</html>
