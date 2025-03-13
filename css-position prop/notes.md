@@ -59,6 +59,7 @@ Note: An absolutely positioned element is removed from the normal flow.
 
 Example:
 
+```html
 <head>
     <style>
         #about{
@@ -80,6 +81,7 @@ Example:
     </div>
 </body>
 </html>
+```
 cwh tutorial image
 
 Explanation:
@@ -103,6 +105,7 @@ It allows an element to become "stuck" to the top or bottom of its container whe
 
 Example:
 
+```html
 <head>
     <style>
         h1{
@@ -116,3 +119,4 @@ Example:
     <h1>CodeWithHarry</h1>
 </body>
 </html>
+```
