@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+</head>
+<Style>
+body{
+    background-color: aqua;
+}
+.ex{
+    background-color: rgb(50, 127, 236);
+    height:245px;
+    width:245px;
+    padding: 13px;
+    margin: 25px;
+}
+/* Media queries help to add responsiveness to the website by adding breakout points or when only a certain condition is true.
+
+syntax: @media only mediatype and (condition){ css code } */
+
+@media only screen and (max-width: 344px){
+    .ex{
+        background-color: aliceblue;
+    }
+}
+@media only screen and (orientation:portrait){
+    .box{
+        font-size: smaller;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border: 2px solid whitesmoke;
+    }
+}
+</Style>
+<body>
+    <div class="box">HEY I AM A BOX
+        <div class="ex"></div>
+        <div class="ex"></div>
+        <div class="ex"></div>
+    </div>
+</body>
+</html>

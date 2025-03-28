@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: rgb(253, 177, 177);
+        } */
+
+        /* .box::first-line{
+            color: yellow;
+        } */
+
+         /* .boxes *{
+            color: blue;
+            border: 2px solid black;
+        } */
+
+         p, a, .box, [data-color="primary"]{
+            padding-top: 45px;
+        } 
+
+        .box:nth-child(even){
+            background-color: rgb(68, 92, 251);
+        }
+
+        /* .box:nth-last-child(2){
+            background-color: red;
+        } */
+
+        .boxes::before {
+            content: "Harry is good";
+            color: blue;
+        }
+
+        .boxes::after {
+            content: "Sigma course is also good";
+            color: red;
+        }
+
+        ::selection {
+            background-color: black;
+            color: aqua;
+        }
+
+        .box::first-letter {
+            color: peru;
+            font-size: 45px;
+        }
+
+        input::placeholder {
+            color: rgb(250, 14, 112);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        
+        <div class="box"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officia, impedit quia reiciendis ullam quasi eos ad repellendus similique architecto consequuntur facilis soluta dolore cum recusandae aliquam fuga. Molestiae, labore? Repellendus dolorem voluptatem vitae aliquid quia eveniet ducimus nulla, harum hic assumenda pariatur consequatur asperiores accusamus saepe excepturi, omnis nihil nostrum libero. Quasi porro, rerum harum reprehenderit quia quod molestiae! Officiis dolor repudiandae deleniti a, mollitia ex odit ducimus quas labore facilis laudantium, sapiente velit nesciunt cumque sit veniam libero quis similique illo amet architecto! Temporibus modi consectetur in eius, nemo voluptas recusandae facilis dolore, quasi commodi fugiat neque nihil, cupiditate dignissimos! Ipsam quisquam excepturi sit quibusdam vitae at ullam accusamus praesentium corporis aspernatur asperiores deleniti est saepe veritatis quia libero iure a placeat, maxime officiis corrupti, nostrum quos laboriosam inventore? Obcaecati culpa rerum placeat in aliquam maxime corrupti reprehenderit neque cumque voluptatum.</div>
+        <div data-color="primary" class="box">I am first box</div>
+        <div class="box box1">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <input type="text" placeholder="Type your name here">
+    </div>
+</body>
+
+</html>

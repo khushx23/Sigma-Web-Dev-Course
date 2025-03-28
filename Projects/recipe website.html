@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>RECIPE WEBSITE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            background: #f8f8f8;
+        }
+
+        header {
+            height: 60px;
+            width: 100%;
+            background-color: rgb(20, 20, 20);
+            color: white;
+            display: flex;
+            /* Enables flexbox */
+            align-items: center;
+            /* Centers items vertically */
+        }
+
+        .container {
+            width: 90%;
+            /* Ensures it doesn’t stretch */
+            margin: auto;
+            /* Centers it horizontally */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-list {
+            display: none;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline;
+            margin-right: 20px;
+            font-weight: 500;
+        }
+
+        .logo {
+            font-size: 24px;
+        }
+
+        .hero {
+            width: 100%;
+            height: 500px;
+            background: url(top.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: cover;
+            color: rgb(254, 249, 249);
+            text-align: center;
+            padding: 140px 0;
+            margin-bottom: 20px;
+
+        }
+
+        .hero h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+
+        }
+
+        .search-box {
+            max-width: 550px;
+            margin: 15px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
+        .search-box input {
+            width: 70%;
+            padding: 10px;
+            border: 0;
+            border-radius: 5px 0 0 5px;
+            font-size: 1rem;
+            border: rgba(207, 26, 26, 0.907);
+        }
+
+        .search-box button {
+
+            padding: 10px 20px;
+            border: 0;
+            border-radius: 0 5px 5px 0;
+            font-size: 1rem;
+            background-color: rgba(207, 26, 26, 0.907);
+            color: white;
+            cursor: pointer;
+        }
+
+        .recipe h1 {
+            text-align: center;
+            margin: bottom 30px;
+            font-size: 28px;
+
+        }
+
+        .recipe {
+            padding: 50px 0;
+        }
+
+        .recipe-section {
+            width: 90%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            column-gap: 10px;
+
+        }
+
+        .recipe-card {
+            background: white;
+            margin: 30px 10px;
+            border-radius: 10px;
+            border: 1px solid rgb(185, 178, 178);
+            overflow: hidden;
+        }
+
+        .recipe-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .recipe-card h2 {
+            font-size: 22px;
+            padding: 20px;
+        }
+
+        .recipe-card p {
+            font-size: 18px;
+            padding: 20px;
+        }
+
+        .recipe-card a {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            background: rgb(37, 34, 34);
+            color: white;
+            padding: 15px 0;
+            cursor: pointer;
+        }
+
+        footer {
+            background: rgb(37, 34, 34);
+            padding: 20px 0px;
+            color: white;
+            text-align: center;
+        }
+
+        .menu-icon {
+            font-size: 20px;
+            padding: 20px;
+            text-align: 20px;
+            cursor: pointer;
+            display: block;
+
+        }
+
+        @media only screen and (min-width: 768px) {
+            .menu-icon {
+                display: none;
+            }
+
+            .nav-list {
+                display: block;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo"> Delicious Recipe</h2>
+            <nav>
+                <div class="menu-icon"> &#9776;</div>
+
+                <ul class="navlist">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Recipes</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- <-------------------------HERO SECTION-------------------------------------->
+
+    <section class="hero">
+        <div class="hero-section">
+            <h2 class="welcome">Welcome to our recipe collection!</h2>
+            <p>Search mouth watering recipes to satisfy your cravings.</p>
+            <form action="#" class="search-box">
+                <input type="text" placeholder="Search recipe">
+                <button type="submit"> Search </button>
+
+            </form>
+        </div>
+
+    </section>
+
+    <!-- ------------------------RECIPE SECTION-------------------------------------- -->
+    <section class="recipe">
+        <h1> Featured Recipes</h1>
+        <div class="recipe-section">
+            <div class="recipe-card">
+
+
+                <img src="aloo chat.png">
+
+                <h2> Aloo Chat</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, magnam maxime. Quos nam culpa similique?</p>
+                <a href="#"> View recipe</a>
+            </div>
+            <div class="recipe-card">
+
+                <img src="bengali cuisine.png">
+                <h2> Bengali cuisine</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, architecto expedita. Id enim quas libero?</p>
+                <a href="#"> View recipe</a>
+            </div>
+            <div class="recipe-card">
+
+                <img src="pani puri.png">
+                <h2> Pani puri</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, architecto expedita. Id enim quas libero?</p>
+                <a href="#"> View recipe</a>
+            </div>
+            <div class="recipe-card">
+
+                <img src="butter paneer.png">
+                <h2> Butter Paneer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, architecto expedita. Id enim quas libero?</p>
+                <a href="#"> View recipe</a>
+            </div>
+
+
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <p>
+                &copy; 2025 Delicious Recipes
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
