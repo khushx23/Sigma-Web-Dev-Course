@@ -1,0 +1,281 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    ; /*the width and height of the element is calculated including padding and border */
+    .caveat- {
+        font-family: "Caveat", cursive;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+}
+
+.main{
+    height: 80vh;
+    background-image: url(bg.jpg);
+    position: relative;
+    background-position: center center; /* used to position a background image in the center of the element, both horizontally and vertically*/
+    background-repeat: no-repeat;
+   background-size: max(1200px, 100vw); /* used to set the size of the background image. The image will be scaled to fit the width of the viewport, but will not exceed 1200px in width*/
+    
+    
+}
+.main .box{
+    height:80vh;
+    background-color: black;
+    opacity: 0.69;
+    width: 100%;
+    position:absolute;
+    top: 0;
+}
+nav{
+    height: 60px;
+    width: 60vw;
+    margin: auto; /*to center the nav bar*/
+    color: white;
+    align-self: center;
+    position: relative;
+    z-index: 10; /*to make sure the nav bar is on top of the background image*/
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+   display:flex ;
+   height: 100%;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    color: white;
+    
+        font-family: "Martel Sans", sans-serif;
+    gap: 21px;
+    padding: 30px;
+      
+}
+.container > span:first-child{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+}
+.container > span:nth-child(2){
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+.container > span:nth-child(3){
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+.get-started{
+    font-size: 15px;
+    cursor: pointer;
+    width: 130px;
+    height: 30px;
+}
+.email{
+    width: 200px;
+    height: 30px;
+    
+    border: none;
+    padding-left: 10px;
+    font-size: 15px;
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 400;
+    background-color: rgb(0, 0, 0);
+    color: rgb(249, 244, 244);
+    opacity: 0.6;
+    z-index: 1;
+    position: relative;
+    border: 2px solid rgb(135, 125, 125);
+}
+.separation{
+    height: 7px;
+    width: 100vw;
+    background-color: rgb(45, 45, 45);
+    opacity: 0.7;
+}
+/* .aside{
+    
+    background-color: rgb(17, 16, 16);
+    color: white;
+    font-family: "Martel Sans", sans-serif;
+}
+.aside > span:first-child{
+    font-size: 20px;
+    font-weight: 800;
+    padding: 10px;
+}
+.squid-game{
+    
+    } */
+    .aside {
+        background-color: black;
+        color: white;
+        display: flex;
+        height: 50vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center; /* vertically center (optional) */
+         /* optional if you want space between */
+    
+      }
+      span{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+        padding: 10px;
+      }
+      .aside-text{
+        font-size: 40px;
+        font-weight: 800;
+        padding: 10px;
+      }
+      
+      .squid-game{
+       max-width: 200px; /*or whatever size you want */ 
+         margin-left: 20px; /*optional spacing */
+     padding-right: 20px;
+      }
+   .seperate{
+    background-color: rgb(35, 35, 34);
+    height: 7px;
+    width: 100vw;
+    opacity: 0.7;
+   }    
+   .english{
+    font-size: 15px;
+    background-color: rgb(231, 218, 218);
+    opacity: 0.7;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    width: 68px;
+    border-radius: 5px;
+    padding: 2px;
+    border: 2px solid rgb(22, 20, 20);
+}
+   .sign-in{
+    font-size: 15px;
+    background-color: rgb(245, 15, 15);
+    opacity: 0.8;
+    border: 2px solid rgb(241, 172, 172);
+    color: rgb(243, 240, 240);
+    z-index: 1;
+    width: 65px;
+    border-radius: 2px;
+    padding: 2px;
+   }
+   .second-aside {
+    background-color: black;
+    
+    color: white;
+    display: flex;
+    height: 50vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center; /* vertically center (optional) */
+     /* optional if you want space between */
+
+  }
+  span{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    padding: 10px;
+  }
+  .second-aside-text{
+    font-size: 40px;
+    font-weight: 800;
+    padding: 10px;
+  }
+  
+  .suzume{
+    max-width: 200px; /* or whatever size you want */
+    margin-right: 20px; /* optional spacing */
+    padding-left: 20px;
+  }
+   .video{
+    background-color: rgb(0, 0, 0);
+    
+    color: white;
+    display: flex;
+    height: 50vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center; /* vertically center (optional) */
+     /* optional if you want space between */
+
+  }
+  span{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    padding: 10px;
+  }
+  .video-text{
+    font-size: 40px;
+    font-weight: 800;
+    padding: 10px;
+  }
+  
+  .pushpa2{
+    max-width: 200px; /* or whatever size you want */
+    margin-right: 20px; /* optional spacing */
+    padding-left: 20px;
+  }
+  .footer{
+    background-color: black;
+    height: 70vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; /* vertically center (optional) */
+     /* optional if you want space between */
+    flex-direction: row;
+    row-gap: 25px;
+    column-gap: 75px;
+  }
+  .span span{
+    text-decoration: underline;
+  }
+
+  .footer-text{
+    font-size: 20px;
+    font-weight: 500;
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 548px;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    /* Netflix-style dark gradient */
+    background: linear-gradient(to bottom right, #74070d, #4f058b);
+    
+    /* Optional: Netflix vibe font + text color */
+    font-family: Arial, sans-serif;
+
+    color: #ffffff;
+  }
+  .copyright{
+    background-color: black;
+    padding-bottom: 30px;
+  }

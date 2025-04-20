@@ -8,23 +8,26 @@
     <style>
         .container {
             border: 2px solid red;
-            display: flex;
+            /* display: flex; (by default it is row) */
             height: 80vh;
-            /* justify-content: center; */
-            align-items: center;
-            /* flex-direction: column; */
-            flex-wrap: wrap;
+            /* justify-content: center; (container ko center kr deta h)
+            justify-content:flex-end; ( container ko end m shift kr dege) */
+            /* justify-content:space-around; ( container items k beech me even spaces aajayege) u can also use , space-between nd space-evenly */
+             align-items: center; /* (vertically center kr dete h) */
+            /* flex-direction: column; (items ko row ya column wise lay kr dena) */
+             flex-wrap: wrap; /*(use to create responsive layouts for diff screen sizes) */
             /* align-content: flex-start; */
             /* there is no justify-items  in flexbox; */
             flex-flow: row wrap;
-            /* gap: 30px; 
-            row-gap: 40px;
-            column-gap: 10px; */
-            gap: 40px 10px;
+            /* gap: 30px; (items k beech me gap de deta h horizontally and vertically) */
+            row-gap: 40px; /* ( items k beech me gap de deta h row m) */
+             column-gap: 10px;/*(items k beech me gap de deta h column m) */
+                gap: 40px 10px;
+            }
 
-        }
+        
 
-        .item {  
+        .item {
             /* flex-grow: 1; */
             height: 92px;
             width: 92px;
@@ -33,20 +36,22 @@
             background-color: blueviolet;
         }
 
-        .order-1{
+        .order-1 {
             order: 1;
         }
-        .order-2{
+
+        .order-2 {
             order: 2;
         }
-        .order-3{
+
+        .order-3 {
             order: 3;
         }
 
-        .item1{  
-            /* flex-grow: 2; */
+        .item1 {
+            /* flex-grow: 2;  */
             /* flex-shrink: 2; */
-            align-self: flex-end;
+             align-self: flex-end; /* (jisme koi particular item apne aap ko align krle khud hi) */
         }
     </style>
 </head>
@@ -66,8 +71,8 @@
             <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
-            
-         
+
+
         </div>
     </main>
 
