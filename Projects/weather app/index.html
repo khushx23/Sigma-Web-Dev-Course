@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <div class="nav">
+
+            <img src="icon.png" alt="Weather Icon" class="logo" height=40 width=40 style="margin-right: 10px;">
+            <p>My Weather App</p>
+        </div>
+        <form>
+
+            <input type='text' placeholder="Search for a city" class="searchInput">
+            <button type="submit" class="searchButton">Search</button>
+        </form>
+    </div>
+
+    <h1 class="title">Current Weather at <span class="loc">Mumbai</span></h1>
+
+    <div class="container">
+
+        <div class="container1">
+            <div class="weather1">
+                <span> Temperature:</span>
+                <div class="temp">
+
+                    <p> 35 </p>
+
+                </div>
+
+
+
+                <div class="time">
+                    <p> 13:40 - Thursday 26/6/25</p>
+                </div>
+                <div class="condition">
+
+                    <p>Mostly Sunny</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="container2">
+            <div class="weather2">
+
+                <div class="humidity">
+                    <p>Humidity: <span class="humid"> 60% </span></p>
+                </div>
+                <div class="windspeed">
+                    <p>Wind Speed: <span class="wind"> 15 km/h</span></p>
+                </div>
+                <div class="precipitation">
+                    <p>Precipitation: <span class="prec"> 0.05%</span></p>
+                </div>
+            </div>
+        </div>
+                <script src="script.js"></script>
+</body>
+
+</html>

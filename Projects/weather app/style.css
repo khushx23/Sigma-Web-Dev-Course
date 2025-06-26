@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background: linear-gradient(#3eaff6, #e7f6f6);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+.header{
+    margin: 0.2rem;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(225, 245, 251);
+}
+
+.nav{
+    display: flex;
+    justify-content:flex-start;
+    font-size:1.5rem;
+    align-items: center;
+    gap: 1rem;
+
+}
+.logo{
+    
+    border-radius: 50%;
+    background-color: rgb(10, 185, 233);
+    display: flex;
+    justify-content: right;
+    align-self: flex-start;
+       
+}
+.title{
+    font-size: 3rem;
+    color: rgb(8, 38, 78);
+    text-align: center;
+    margin-top: 5rem;
+
+
+}
+
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container1 {
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+.weather1 span {
+    font-size: 2.5rem;
+}
+.container2 {
+    width: 100%;
+    height: 100vh;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.weather2 span {
+    font-size: 2.5rem;
+}
+.weather1 {
+    width: 40rem;
+    height: 10rem;
+    text-align: center;
+    background-color: rgba(252, 246, 246, 0.6);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.weather2 {
+    width: 40rem;
+    height: 10rem;
+    text-align: center;
+    background-color: rgba(252, 246, 246, 0.6);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 2rem;
+}
+
+.temp {
+    font-size: 2.5rem;
+}
+
+.loc {
+    font-size: 3rem;
+}
+
+.time {
+    font-size: 1.8rem;
+}
+
+.condition {
+
+    margin: 0.5rem;
+    margin-left: 0.2rem;
+    font-size: larger;
+
+}
+
+
+.searchInput {
+    padding: 0.5rem;
+    color: rgb(15, 15, 15);
+    border: 2px solid rgb(40, 39, 39);
+    border-radius: 0.3rem;
+}
+
+.searchButton {
+    padding: 0.5rem;
+    background-color: rgb(6, 180, 228);
+    border-radius: 0.3rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    border: 2px solid rgb(3, 9, 59);
+}
+
+@media (max-width: 660px) {
+    .container {
+        flex-direction: column;
+        padding: 1rem;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .weather1, .weather2 {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    nav {
+        margin: 2rem 0;
+    }
+
+    .searchInput, .searchButton {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .searchButton {
+        margin-left: 0;
+    }
+}
