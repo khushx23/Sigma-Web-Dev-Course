@@ -1,0 +1,103 @@
+body{
+    background-color: black;
+}
+.holder{
+    margin: 12rem auto;
+    width: 170px;
+    height: 400px;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+}
+.candle{
+    width: 170px;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+
+    
+    background: hsl(0, 0%, 4%);
+    border-radius: 150px/40px;
+    background: linear-gradient(to bottom, #f9be35, #7d4f01);
+}
+
+.candle::before{
+    content: "";
+    width: 100%;
+    height: 40px;
+    background: rgb(221, 156, 26);
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgb(236, 163, 27);;
+}
+
+.thread{
+    width: 6px;
+    height: 36px;
+    background: black;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: -20px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+.flame{
+    width: 30px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #face67, #f7e8c4);
+    animation: moveFlame 5s linear infinite, enlargeFlame 5s linear infinite;
+}   
+@keyframes moveFlame {
+  0%, 100% {
+    transform: translateX(-50%) rotate(-4deg);
+  }
+  50% {
+    transform: translateX(-50%) rotate(3deg);
+  }
+}
+
+@keyframes enlargeFlame {
+  0%, 100% {
+    height: 120px;
+  }
+  50% {
+    height: 140px;
+  }
+}
+.blinking-glow{
+    width: 30px;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+ 
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.5), 0 0 30px rgba(220, 220, 12, 0.3);
+    animation: blink 1.5s infinite alternate;
+    background-color: radial-gradient(circle, rgba(236, 184, 13, 0.93));
+}
+
+/* 
+@keyframes moveblinkFlame {
+  0%, 100% {
+    transform: translateX(-50%) rotate(-4deg);
+  }
+  50% {
+    transform: translateX(-50%) rotate(3deg);
+  }
+}
+
+@keyframes enlargeblinkFlame {
+  0%, 100% {
+    height: 120px;
+  }
+  50% {
+    height: 140px;
+  }
+} */
